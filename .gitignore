@@ -1,0 +1,41 @@
+# SDCC の生成物
+# （手書きのアセンブラソースは .S とするため、SDCC が生成する .asm は除外する）
+*.rel
+*.lib
+*.asm
+*.lst
+*.rst
+*.sym
+*.map
+*.mem
+*.lk
+*.noi
+*.ihx
+*.hex
+*.cdb
+*.adb
+
+# Arduino CLI 向けにラッパーが生成するファイル
+*.o
+*.a
+*.d
+
+# Arduino CLI のビルド出力（--export-binaries 等）
+build/
+
+# ROM イメージ（著作権のため、リポジトリに置かない。誤コミット防止の保険）
+*.rom
+*.ROM
+
+# ローカル環境の設定（.env.example を参照）
+.env
+
+# 配布物
+dist/
+
+# エディタ・OS
+.vscode/
+*~
+*.swp
+.DS_Store
+Thumbs.db
